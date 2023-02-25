@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div class="container mx-auto mt-5">
+    <div class="container mx-auto mt-5 z-30">
         <div class="flex justify-center mb-3">
-            <button class="bg-blue-500 text-white rounded-md py-2 px-4">ADD</button>
+            <button class="bg-blue-500 text-white rounded-md py-2 px-4" id="add-btn">ADD</button>
         </div>
         <table class="table-auto text-black mx-auto text-center">
             <thead class="bg-blue-100 mx-auto">
@@ -27,7 +27,7 @@
                     <th class="border border-slate-500 px-6">Action</th>
                 </tr>
             </thead>
-            <tbody class="mx-auto">
+            <tbody class="mx-auto" id="tbody">
                 <tr>
                     <td class="border border-slate-500 px-6">1</td>
                     <td class="border border-slate-500 px-6">Ehsan</td>
@@ -41,7 +41,33 @@
 
             </tbody>
         </table>
+
     </div>
+    <div class="modal w-screen h-screen justify-center items-center absolute top-1 left-1 z-50 hidden" id="modal">
+        <div class="flex justify-center p-10 w-96 bg-yellow-200 rounded-md shadow-slate-800 shadow-2xl">
+            <form action="" class="flex flex-col justify-center items-center gap-3">
+                <input type="text" class="p-1 rounded-md border outline-0 bg-green-50" placeholder="Firstname" required>
+                <input type="text" class="p-1 rounded-md border outline-0 bg-green-50" placeholder="Lastname" required>
+                <input type="email" class="p-1 rounded-md border outline-0 bg-green-50" placeholder="Email" required>
+                <input type="text" class="p-1 rounded-md border outline-0 bg-green-50" placeholder="Mobile Number"
+                    required>
+                <div class="flex flex-col gap-1 text-center">
+                    <div>
+                        <label for="name">Gender : </label>
+                    </div>
+                    <div class="flex gap-2">
+                        <p>male : </p>
+                        <input type="checkbox" class="p-1 rounded-md border outline-0 bg-green-50" name="gender">
+                        <p>female : </p>
+                        <input type="checkbox" class="p-1 rounded-md border outline-0 bg-green-50" name="gender">
+                    </div>
+                </div>
+                <input type="file" class="rounded-md border outline-0 bg-green-50 w-52">
+                <button class="bg-blue-500 py-2 w-full rounded-md text-white">Add</button>
+            </form>
+        </div>
+    </div>
+    <div class="overlay h-screen w-screen absolute top-0 bg-slate-300 opacity-80 z-40 hidden"></div>
 </body>
 
 </html>
