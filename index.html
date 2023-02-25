@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div class="container mx-auto mt-5 z-30">
+    <div class="container mx-auto mt-5 z-20">
         <div class="flex justify-center mb-3">
-            <button class="bg-blue-500 text-white rounded-md py-2 px-4" id="add-btn">ADD</button>
+            <button class="bg-blue-500 text-white rounded-md py-2 px-4" id="showmodal">ADD</button>
         </div>
         <table class="table-auto text-black mx-auto text-center">
             <thead class="bg-blue-100 mx-auto">
@@ -46,9 +46,9 @@
         </table>
 
     </div>
-    <div class="modal w-screen h-screen justify-center items-center absolute top-1 left-1 z-50 hidden" id="modal">
-        <div class="flex justify-center p-10 w-96 bg-yellow-200 rounded-md shadow-slate-800 shadow-2xl">
-            <form action="" class="flex flex-col justify-center items-center gap-3">
+    <div class="modal w-screen h-screen justify-center items-center absolute top-1 left-1 hidden" id="modal">
+        <div class="flex justify-center p-10 w-96 bg-yellow-200 rounded-md shadow-slate-800 shadow-2xl z-40">
+            <form action="" class="flex flex-col justify-center items-center gap-3" id="form">
                 <input type="text" id="firtname" class="p-1 rounded-md border outline-0 bg-green-50"
                     placeholder="Firstname" required>
                 <input type="text" id="lastname" class="p-1 rounded-md border outline-0 bg-green-50"
@@ -57,6 +57,7 @@
                     required>
                 <input type="text" id="mobile-number" class="p-1 rounded-md border outline-0 bg-green-50"
                     placeholder="Mobile Number" required>
+                <input type="date" name="" id="date" class="p-1 rounded-md border outline-0 bg-green-50 w-52">
                 <div class="flex flex-col gap-1 text-center">
                     <div>
                         <label for="name">Gender : </label>
@@ -69,11 +70,12 @@
                     </div>
                 </div>
                 <input type="file" class="rounded-md border outline-0 bg-green-50 w-52">
-                <button class="bg-blue-500 py-2 w-full rounded-md text-white">Add</button>
+                <button class="bg-blue-500 py-2 w-full rounded-md text-white" id="add-btn">Add</button>
             </form>
         </div>
     </div>
-    <div class="overlay h-screen w-screen absolute top-0 bg-slate-300 opacity-80 z-40 hidden"></div>
+    <div class="overlay h-screen w-screen absolute top-0 bg-slate-300 opacity-80 z-30 hidden" id="overlay"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>

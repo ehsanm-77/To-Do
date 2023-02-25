@@ -592,6 +592,10 @@ video {
   z-index: 30;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
