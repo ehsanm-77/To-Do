@@ -28,16 +28,19 @@
                 </tr>
             </thead>
             <tbody class="mx-auto" id="tbody">
-                <tr>
-                    <td class="border border-slate-500 px-6">1</td>
+                <!-- <tr>
+                    <td class="border border-slate-500 px-6 py-3">1</td>
                     <td class="border border-slate-500 px-6">Ehsan</td>
                     <td class="border border-slate-500 px-6">Mohamadi</td>
                     <td class="border border-slate-500 px-6">male</td>
                     <td class="border border-slate-500 px-6">emo@gmail.com</td>
                     <td class="border border-slate-500 px-6">img</td>
                     <td class="border border-slate-500 px-6">000</td>
-                    <td class="border border-slate-500 px-6">add</td>
-                </tr>
+                    <td class="border border-slate-500 px-6">
+                        <button class="bg-yellow-500 text-white rounded-md p-1 w-[80px]">Edit</button>
+                        <button class="bg-red-500 text-white rounded-md p-1"> Remove</button>
+                    </td>
+                </tr> -->
 
             </tbody>
         </table>
@@ -46,20 +49,23 @@
     <div class="modal w-screen h-screen justify-center items-center absolute top-1 left-1 z-50 hidden" id="modal">
         <div class="flex justify-center p-10 w-96 bg-yellow-200 rounded-md shadow-slate-800 shadow-2xl">
             <form action="" class="flex flex-col justify-center items-center gap-3">
-                <input type="text" class="p-1 rounded-md border outline-0 bg-green-50" placeholder="Firstname" required>
-                <input type="text" class="p-1 rounded-md border outline-0 bg-green-50" placeholder="Lastname" required>
-                <input type="email" class="p-1 rounded-md border outline-0 bg-green-50" placeholder="Email" required>
-                <input type="text" class="p-1 rounded-md border outline-0 bg-green-50" placeholder="Mobile Number"
+                <input type="text" id="firtname" class="p-1 rounded-md border outline-0 bg-green-50"
+                    placeholder="Firstname" required>
+                <input type="text" id="lastname" class="p-1 rounded-md border outline-0 bg-green-50"
+                    placeholder="Lastname" required>
+                <input type="email" id="email" class="p-1 rounded-md border outline-0 bg-green-50" placeholder="Email"
                     required>
+                <input type="text" id="mobile-number" class="p-1 rounded-md border outline-0 bg-green-50"
+                    placeholder="Mobile Number" required>
                 <div class="flex flex-col gap-1 text-center">
                     <div>
                         <label for="name">Gender : </label>
                     </div>
                     <div class="flex gap-2">
                         <p>male : </p>
-                        <input type="checkbox" class="p-1 rounded-md border outline-0 bg-green-50" name="gender">
+                        <input type="radio" class="p-1 rounded-md border outline-0 bg-green-50" name="gender">
                         <p>female : </p>
-                        <input type="checkbox" class="p-1 rounded-md border outline-0 bg-green-50" name="gender">
+                        <input type="radio" class="p-1 rounded-md border outline-0 bg-green-50" name="gender">
                     </div>
                 </div>
                 <input type="file" class="rounded-md border outline-0 bg-green-50 w-52">
