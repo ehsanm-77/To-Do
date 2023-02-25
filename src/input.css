@@ -9,7 +9,7 @@
         src: url(/assets/fonts/Poppins-Medium.ttf);
     }
 
-    body {
+    * {
         font-family: "poppins";
     }
 }
