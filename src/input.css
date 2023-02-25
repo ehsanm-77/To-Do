@@ -1,3 +1,15 @@
+/* Font */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "poppins";
+        src: url(/assets/fonts/Poppins-Medium.ttf);
+    }
+
+    body {
+        font-family: "poppins";
+    }
+}
